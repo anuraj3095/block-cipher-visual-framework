@@ -1,0 +1,31 @@
+.btn-group {
+    position: fixed;
+    bottom: 5px;
+    right: 0px;
+    left: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-group button {
+    background-color: #000000;
+    border: none;
+    /* Green border */
+    width: 120px;
+    color: white;
+    /* White text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+
+/* Add a background color on hover */
+
+.btn-group button:hover {
+    background-color: #33352d;
+}

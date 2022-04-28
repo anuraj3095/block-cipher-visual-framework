@@ -1,0 +1,18 @@
+.algo-info {
+    height: 100%;
+    width: 80%;
+}
+
+.algo-visual {
+    /* background-color: rgb(200, 13, 13);
+    color: blue; */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 25px;
+    height: 85%;
+    left: calc(80px + 50px);
+    right: 50px;
+    gap: 12px;
+}

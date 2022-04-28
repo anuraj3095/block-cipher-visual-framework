@@ -1,0 +1,36 @@
+.des-center-data {
+    /* background-color: rgb(200, 13, 13);
+    color: blue; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    width: 95%;
+}
+
+.des-center-data-f {
+    padding-left: 17px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 95%;
+}
+
+.des-oper {
+    text-align: center;
+}
+
+.des-dummy {
+    height: 40px;
+}
+
+.des-center-env {
+    /* position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95%; */
+    display: grid;
+    grid-template-areas: 'des-main-l des-main-r' 'des-oper des-oper-dummy' 'des-f des-f-dummy' 'des-dummy des-dummy' 'des-out-l des-out-r';
+    column-gap: 50px;
+}

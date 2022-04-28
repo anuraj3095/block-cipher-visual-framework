@@ -1,0 +1,13 @@
+.aes-center-env {
+    /* background-color: rgb(200, 13, 13);
+    color: blue; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    width: 95%;
+    /* top: 25px; */
+    /* left: calc( 50px);
+    right: 50px; */
+}

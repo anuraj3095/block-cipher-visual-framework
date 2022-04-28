@@ -1,0 +1,31 @@
+.sboxtable {
+    background-color: #f8f9fa;
+    color: #202122;
+    /* margin: 1em 0; */
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+    line-height: 1.6;
+    font-family: sans-serif;
+    font-size: 50%;
+    /* position: absolute;
+    top: 50px;
+    right: 50px; */
+}
+
+.sboxtable>caption {
+    font-weight: bold;
+}
+
+.sboxtable>tr>th,
+.sboxtable>tr>td,
+.sboxtable>*>tr>th,
+.sboxtable>*>tr>td {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+.sboxtable>tr>th,
+.sboxtable>*>tr>th {
+    background-color: #eaecf0;
+    text-align: center;
+}

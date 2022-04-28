@@ -1,0 +1,163 @@
+.matrix {
+    /*position: absolute;
+    top: 100px;
+    left: 150px;
+    /* width: 300px;
+    height: 320px; */
+    /* <--style="padding-top: 100px;"> */
+}
+
+.grid-container {
+    /* width: 300px;
+    height: 330px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.grid-item {
+    width: 20px;
+    height: 20px;
+    background-color: #C4C4C4;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 19px;
+    font-size: 15px;
+    text-align: center;
+    transition: opacity 100ms ease-in-out;
+}
+
+.highlight {
+    background: #b13c3c;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.highlight2 {
+    background: #b13c3c;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    -o-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.scaled {
+    transform: scale(2, 2);
+    /* Equal to scaleX(2) scaleY(0.5) */
+    transform-origin: left;
+    background-color: pink;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
+    -o-transition: all 2s linear;
+    transition: all 2s linear;
+}
+
+.highlightAnim {
+    animation-name: highlightFrames;
+    animation-duration: 1s;
+}
+
+.highlightAnimslow {
+    animation-name: highlightFrames;
+    animation-duration: 2s;
+}
+
+@keyframes highlightFrames {
+    0% {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    20% {
+        background-color: rgb(226, 148, 128);
+    }
+    80% {
+        background-color: rgb(226, 148, 128);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.8);
+        ;
+    }
+}
+
+.translateSideAnimSlow {
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.translateAroundAnimslow {
+    animation-name: slideuprightdown;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-60px);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(60px);
+    }
+}
+
+@keyframes slideuprightdown {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(0px, calc(-60px - 15px));
+    }
+    80% {
+        transform: translate(calc(60*3px), calc(-60px - 15px));
+    }
+    100% {
+        transform: translate(calc(60*3px), 0px);
+    }
+}
+
+.scaleAnimslow {
+    animation-name: scaleFrames;
+    animation-duration: 6s;
+}
+
+@keyframes scaleFrames {
+    0% {
+        transform: scale(1, 1);
+    }
+    20% {
+        transform: scale(1.5, 1.5);
+    }
+    80% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.mathSign {
+    font-size: 100px;
+    color: rgb(22, 55, 65);
+}
+
+
+/* 
+ * This class is for fade in effect which remains 
+ * even after transiton is over
+ */
+
+.fade {
+    opacity: 0;
+    transition: opacity 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
